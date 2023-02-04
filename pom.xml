@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.challenge</groupId>
-	<artifactId>rbc</artifactId>
+	<artifactId>rbc-stock-markets</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>rbc</name>
+	<name>rbc-stock-markets</name>
 	<description>RBC project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
