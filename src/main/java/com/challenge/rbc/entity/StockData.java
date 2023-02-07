@@ -8,8 +8,8 @@ import java.util.Date;
 import lombok.Data;
 
 
+@Entity
 @Table(name = "stock_data")
-@Entity(name = "StockData")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

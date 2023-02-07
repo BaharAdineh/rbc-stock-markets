@@ -50,7 +50,7 @@ public class StockDataService {
         List<StockData> stockDataList = new ArrayList<>();
         try {
             BufferedReader br = new BufferedReader(new InputStreamReader(file.getInputStream()));
-            br.readLine();
+            br.readLine(); // this is for skipping first line
             String line;
             while ((line = br.readLine()) != null) {
                 String[] data = line.split(",");
