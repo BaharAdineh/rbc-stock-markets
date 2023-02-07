@@ -31,7 +31,7 @@ public class PersistenceConfig {
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("org.h2.Driver");
-        dataSource.setUrl("jdbc:h2:mem:stock_data");
+        dataSource.setUrl("jdbc:h2:mem:rbc");
         dataSource.setUsername("sa");
         dataSource.setPassword("sa");
         return dataSource;
