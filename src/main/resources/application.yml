@@ -1,0 +1,12 @@
+spring:
+  data:
+    mongodb:
+      uri: 'mongodb://localhost:27017/?readPreference=primary'
+      database: 'rbc-db'
+
+
+logging:
+  pattern.console: "%clr(%5p) %clr([traceid=%X{traceId:-} spanid=%X{spanId:-} parentspanid=%X{parentId:-}]){green} ${PID:-} --- [%-15.15thread] %-40.40logger{39} : %replace(%msg %rEx{10}){'[\r\n]+', '\u2028'}%nopex%n"
+  level:
+    ROOT: warn
+    com.challenge.rbc: info

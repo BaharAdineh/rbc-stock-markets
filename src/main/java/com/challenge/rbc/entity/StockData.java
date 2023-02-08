@@ -2,22 +2,21 @@ package com.challenge.rbc.entity;
 
 import lombok.*;
 
-import jakarta.persistence.*;
+
 import java.util.Date;
 
-import lombok.Data;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 
-@Entity
-@Table(name = "stock")
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Builder
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+@EqualsAndHashCode
+@Document(collection = "stock_data")
 public class StockData {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
 
     private String clientId;
     private Integer quarter;
@@ -36,5 +35,6 @@ public class StockData {
     private Double percentChangeNextWeeksPrice;
     private Integer daysToNextDividend;
     private Double percentReturnNextDividend;
+
 
 }
